@@ -1,0 +1,63 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8989ba+0,8989ba+100;Purple+3D */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c3d9ff+0,b1c8ef+41,98b0d9+100;Lavender+3D */
+    background: #c3d9ff;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #c3d9ff 0%, #b1c8ef 41%, #98b0d9 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #c3d9ff 0%, #b1c8ef 41%, #98b0d9 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #c3d9ff 0%, #b1c8ef 41%, #98b0d9 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3d9ff', endColorstr='#98b0d9',GradientType=0 ); /* IE6-9 */
+}
+
+.container {
+    //background-color: white;
+    .login-row{
+        opacity:0.9;
+        min-height:500px;
+        padding-top:200px;
+        .card{
+            min-height:400px;
+            .btn-lg{
+                min-width:200px;
+                margin-bottom:20px;
+                color: white; // In yourUse @body-bg 
+                opacity:0.9;
+            }
+            .btn-facebook{
+                background-color:#3b5998;
+            }
+            .btn-twitter{
+                background-color:#00aced
+            }
+            .btn-google{
+                background-color:#c32f10;
+            }
+        }
+    }
+    .main-section{
+        .card{
+            margin-bottom:40px;
+            .tag-img-container{
+                float:left; 
+                margin-right:10px;
+            }
+        
+            .col-margin{
+                margin-top:10px;
+                margin-bottom:10px;
+            }
+        }
+    }
+    .header-section{
+        margin-bottom:40px;
+    }
+    
+ 
+
+}
