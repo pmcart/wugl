@@ -1,0 +1,6 @@
+
+**FOR MONGOD RUN COMMAND
+Create the folder.
+sudo mkdir -p /data/db/
+Give yourself permission to the folder.
+sudo chown `id -u` /data/db

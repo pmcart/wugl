@@ -1,5 +1,5 @@
 [{
-        "_id": "5989c9f1deb64bfd40f300bb",
+        "id": "5989c9f1deb64bfd40f300bb",
         "name": "TestLocation1",
         "tags": [
             "place",
@@ -8,7 +8,7 @@
 
     },
     {
-        "_id": "5989c9f1deb64bfd40f300bc",
+        "id": "5989c9f1deb64bfd40f300bc",
         "name": "TestLocation2",
         "tags": [
             "place",

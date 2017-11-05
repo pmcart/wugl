@@ -1,27 +1,27 @@
 <div>
-                <div class="card">
-                                <h3 class="card-header">{{item.name}}</h3>
-                                <div class="card-block">
-                                  <h4 class="card-title">Special title treatment</h4>
-                                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <div class="row">
-                                <div class="col-sm-12 col-md-3 col-lg-3 col-margin">
-                                  <div *ngIf="!isActive">
-                                  <button class="btn btn-danger" (click)="locationClick(item)">Are you Going?</button>
-                                  </div>
-                                  <div *ngIf="isActive">
-                                  <button class="btn btn-success" (click)="locationClick(item)">I'm Going?</button>
-                                  </div>
-                                </div>
-                                <div class="col-sm-12 col-md-6 col-lg-7 col-margin">
-                                <tag-list></tag-list>
-                                  </div>
-                                  <div class="col-sm-12 col-md-3 col-lg-2 col-margin">
-                                      <div>
-                                          <button class="btn btn-sm btn-primary" >See All</button>
-                                          </div>
-                                        </div>
-                              </div>
-                                </div>
-                              </div>
+    <div class="card">
+        <h3 class="card-header">{{item.name}}</h3>
+        <div class="card-block">
+            <h4 class="card-title">Special title treatment</h4>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-lg-3 col-margin">
+                    <div *ngIf="!isActive">
+                        <button class="btn btn-danger" (click)="locationClick(item)">Are you Going?</button>
+                    </div>
+                    <div *ngIf="isActive">
+                        <button class="btn btn-success" (click)="locationClick(item)">I'm Going?</button>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-7 col-margin">
+                    <tag-list></tag-list>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-2 col-margin">
+                    <div>
+                        <button class="btn btn-sm btn-primary">See All</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
