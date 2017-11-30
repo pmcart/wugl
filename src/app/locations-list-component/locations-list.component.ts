@@ -1,18 +1,16 @@
-
-import {LocationComponent} from '../location-component/location.component';
+import {
+  LocationComponent
+} from '../location-component/location.component';
 import {
   Component,
   OnInit
 } from '@angular/core';
 import {
-  Http,
-  Response,
-  Headers,
-  RequestOptions
-} from '@angular/http';
-import {
   Observable
 } from 'rxjs'
+import {
+  WuglapiService
+} from '../services/wuglapi.service'
 
 
 @Component({
@@ -23,27 +21,19 @@ import {
 
 export class LocationsListComponent implements OnInit {
   private locationItems: Observable < any > ;
+  private tagsList: Observable < any > ;
+  renderTime: boolean = false;
 
-  constructor(private http: Http) {}
+  constructor(private wuglapiService: WuglapiService) {}
 
   ngOnInit() {
-    this.loadLocations();
+
+    this.wuglapiService.getLocations().subscribe(locationItems => this.locationItems = locationItems);
+    this.wuglapiService.getTags('UL').subscribe(tagsList => {
+      this.tagsList = tagsList;
+      this.renderTime = true;
+    });
   }
 
-  private loadLocations() {
-    let headers = new Headers({ 'Content-Type': 'application/json' });
-    let options = new RequestOptions({ headers: headers });
-
-    this.http.get("http://localhost:3000/location", options)
-      .map((data) => {
-        console.log(data.json());
-        return data.json();
-      })
-      .subscribe((success) => {
-        this.locationItems = success;
-        console.log(this.locationItems)
-      });
-      
-  }
 
 }

@@ -7,7 +7,7 @@
         "test:once": "karma start karma.conf.js --single-run",
         "build": "rimraf dist && webpack --config config/webpack.prod.js --bail",
         "serve": "lite-server -c=bs-config.json",
-        "prestart": "npm run mongo-win",
+        "prestart": "npm run build && npm run mongo-win && node src/server/seeder.js",
         "start": "webpack-dev-server --inline --progress --port 8080 | npm run express",
         "pretest": "npm run build",
         "test": "karma start karma.webpack.conf.js",
@@ -25,7 +25,7 @@
         "e2e": "ng e2e",
         "mongo-win": "mongod --config mongo-db/mongod.cfg --fork",
         "express": "node ./bin/www",
-        "rundb": "npm run mongo-win & npm run express",
+        "rundb": "npm run mongo-win & npm run express && node src/server/seeder.js",
         "seed": "mongoimport --db mean-app --collection TestObject --drop --file seed.json",
         "runseed": "node src/server/seeder.js"
     },

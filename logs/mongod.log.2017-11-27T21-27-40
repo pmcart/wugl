@@ -1,0 +1,35 @@
+2017-11-07T20:37:42.143+0000 I CONTROL  [initandlisten] MongoDB starting : pid=21917 port=27017 dbpath=/data/db 64-bit host=pmcart-Latitude-E7440
+2017-11-07T20:37:42.143+0000 I CONTROL  [initandlisten] db version v3.4.4
+2017-11-07T20:37:42.143+0000 I CONTROL  [initandlisten] git version: 888390515874a9debd1b6c5d36559ca86b44babd
+2017-11-07T20:37:42.143+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2017-11-07T20:37:42.143+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-11-07T20:37:42.143+0000 I CONTROL  [initandlisten] modules: none
+2017-11-07T20:37:42.144+0000 I CONTROL  [initandlisten] build environment:
+2017-11-07T20:37:42.144+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2017-11-07T20:37:42.144+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2017-11-07T20:37:42.144+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-11-07T20:37:42.144+0000 I CONTROL  [initandlisten] options: { config: "mongo-db/mongod.cfg", processManagement: { fork: true }, storage: { dbPath: "/data/db" }, systemLog: { destination: "file", path: "logs/mongod.log" } }
+2017-11-07T20:37:42.229+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-11-07T20:37:42.229+0000 I STORAGE  [initandlisten] 
+2017-11-07T20:37:42.229+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2017-11-07T20:37:42.229+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2017-11-07T20:37:42.229+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3432M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-11-07T20:37:43.197+0000 I CONTROL  [initandlisten] 
+2017-11-07T20:37:43.197+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-11-07T20:37:43.197+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-11-07T20:37:43.197+0000 I CONTROL  [initandlisten] 
+2017-11-07T20:37:43.197+0000 I CONTROL  [initandlisten] 
+2017-11-07T20:37:43.197+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2017-11-07T20:37:43.197+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2017-11-07T20:37:43.197+0000 I CONTROL  [initandlisten] 
+2017-11-07T20:37:43.197+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2017-11-07T20:37:43.198+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2017-11-07T20:37:43.198+0000 I CONTROL  [initandlisten] 
+2017-11-07T20:37:43.198+0000 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. rlimits set to 31395 processes, 65536 files. Number of processes should be at least 32768 : 0.5 times number of files.
+2017-11-07T20:37:43.198+0000 I CONTROL  [initandlisten] 
+2017-11-07T20:37:43.212+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2017-11-07T20:37:43.215+0000 I NETWORK  [thread1] waiting for connections on port 27017
+2017-11-07T20:37:47.960+0000 I NETWORK  [thread1] connection accepted from 127.0.0.1:56506 #1 (1 connection now open)
+2017-11-07T20:37:47.998+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:56506 conn1: { driver: { name: "nodejs", version: "2.2.33" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.4.0-45-generic" }, platform: "Node.js v6.9.1, LE, mongodb-core: 2.1.17" }
+2017-11-07T21:07:13.823+0000 I COMMAND  [ftdc] serverStatus was very slow: { after basic: 0, after asserts: 0, after backgroundFlushing: 0, after connections: 0, after dur: 0, after extra_info: 1856, after globalLock: 1856, after locks: 1856, after network: 1856, after opLatencies: 1856, after opcounters: 1856, after opcountersRepl: 1856, after repl: 1856, after security: 1856, after storageEngine: 1856, after tcmalloc: 1856, after wiredTiger: 1856, at end: 1856 }
+2017-11-07T21:25:40.749+0000 I -        [conn1] end connection 127.0.0.1:56506 (1 connection now open)

@@ -18,11 +18,13 @@ import {
 
 
 export class TagListComponent implements OnInit {
-
-  constructor() {}
+  @Input() tags: any;
+  constructor() {
+    
+  }
 
   ngOnInit() {
-
+  console.log(this.tags);
   }
 
 

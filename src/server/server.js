@@ -12,6 +12,7 @@ mongoose.connect('mongodb://localhost/mean-app')
 
 var test = require('../routes/test');
 var location = require('../routes/location');
+var tag = require('../routes/tag');
 var app = express();
 
 app.use(function(req, res, next) {
@@ -29,6 +30,7 @@ app.use(express.static(path.join(__dirname, 'dist')));
 
 app.use('/test', test);
 app.use('/location', location);
+app.use('/tag', tag);
 
 
 

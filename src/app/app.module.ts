@@ -16,11 +16,12 @@ import { HeaderComponent } from './header-component/header.component';
 import { FacebookModule } from 'ngx-facebook';
 import { LoginRouteGuard } from './guards/login-guard';
 import { UserService } from './services/user.service';
+import { WuglapiService } from './services/wuglapi.service';
 import { TagListComponent } from './tag-list-component/tag-list.component';
 @NgModule({
   imports:      [ BrowserModule, HttpModule, FormsModule, RouterModule.forRoot(appRoutes), FacebookModule.forRoot() ],
   declarations: [ AppComponent, MainContainerComponent, MainSectionComponent, LocationsListComponent, LocationComponent,LoginComponent, HeaderComponent,TagListComponent],
   bootstrap:    [ AppComponent ],
-  providers: [LoginRouteGuard, LoginComponent, UserService]
+  providers: [LoginRouteGuard, LoginComponent, UserService, WuglapiService ]
 })
 export class AppModule { }
