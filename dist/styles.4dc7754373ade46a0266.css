@@ -8214,6 +8214,8 @@ html {
   opacity: 0.9;
   min-height: 500px;
   padding-top: 200px; }
+  .container .login-row .row {
+    margin-bottom: 20px; }
   .container .login-row .card {
     min-height: 400px; }
     .container .login-row .card .btn-lg, .container .login-row .card .btn-group-lg > .btn {
@@ -8233,6 +8235,8 @@ html {
   .container .main-section .card .tag-img-container {
     float: left;
     margin-right: 10px; }
+    .container .main-section .card .tag-img-container img {
+      width: 30px; }
   .container .main-section .card .col-margin {
     margin-top: 10px;
     margin-bottom: 10px; }
@@ -8243,4 +8247,4 @@ html {
 .container .header-section {
   margin-bottom: 40px; }
 
-/*# sourceMappingURL=styles.4a6498a7dfa23dd91ebb.css.map*/
+/*# sourceMappingURL=styles.4dc7754373ade46a0266.css.map*/

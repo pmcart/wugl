@@ -3,6 +3,7 @@ var mongoose = require('mongoose');
 var TagSchema = new mongoose.Schema({
     userID: String,
     id: String,
+    imgURL: String,
     locationID: String,
     date: String,
     countryID: String,

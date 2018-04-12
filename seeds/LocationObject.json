@@ -1,0 +1,38 @@
+[{
+        "name": "Voodoo",
+        "id": "1001",
+        "city": "Letterkenny",
+        "countryID": "IE",
+        "regionID": "UL",
+        "long": "0",
+        "lat": "0"
+    },
+    {
+        "name": "Warehouse",
+        "id": "1002",
+        "city": "Letterkenny",
+        "countryID": "IE",
+        "regionID": "UL",
+        "long": "0",
+        "lat": "0"
+    },
+    {
+        "name": "McGinleys",
+        "id": "1003",
+        "city": "Letterkenny",
+        "countryID": "IE",
+        "regionID": "UL",
+        "long": "0",
+        "lat": "0"
+    },
+    {
+        "name": "Pulse",
+        "id": "1004",
+        "city": "Letterkenny",
+        "countryID": "IE",
+        "regionID": "UL",
+        "long": "0",
+        "lat": "0"
+    }
+
+]

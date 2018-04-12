@@ -1,0 +1,5 @@
+{
+    "undefined": "localhost/mean-app",
+    "dev": "localhost/mean-app",
+    "prod": "localhost/mean-app"
+}

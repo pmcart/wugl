@@ -1,0 +1,26 @@
+[{
+        "id": "1",
+        "name": "Letterkenny",
+        "countryID": "IE"
+    },
+    {
+        "id": "2",
+        "name": "Dublin",
+        "countryID": "IE"
+    },
+    {
+        "id": "3",
+        "name": "Galway",
+        "countryID": "IE"
+    },
+    {
+        "id": "4",
+        "name": "Limerick",
+        "countryID": "IE"
+    },
+    {
+        "id": "5",
+        "name": "Cork",
+        "countryID": "IE"
+    }
+]

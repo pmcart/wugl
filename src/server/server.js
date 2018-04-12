@@ -13,6 +13,8 @@ mongoose.connect('mongodb://localhost/mean-app')
 var test = require('../routes/test');
 var location = require('../routes/location');
 var tag = require('../routes/tag');
+var user = require('../routes/user');
+var city = require('../routes/city');
 var app = express();
 
 app.use(function(req, res, next) {
@@ -31,6 +33,8 @@ app.use(express.static(path.join(__dirname, 'dist')));
 app.use('/test', test);
 app.use('/location', location);
 app.use('/tag', tag);
+app.use('/user', user);
+app.use('/city', city);
 
 
 

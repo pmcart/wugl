@@ -1,0 +1,77 @@
+2017-12-04T14:59:48.587+0000 I CONTROL  [initandlisten] MongoDB starting : pid=20148 port=27017 dbpath=/data/db 64-bit host=pmcart-Latitude-E7440
+2017-12-04T14:59:48.587+0000 I CONTROL  [initandlisten] db version v3.4.4
+2017-12-04T14:59:48.587+0000 I CONTROL  [initandlisten] git version: 888390515874a9debd1b6c5d36559ca86b44babd
+2017-12-04T14:59:48.587+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2017-12-04T14:59:48.587+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-12-04T14:59:48.588+0000 I CONTROL  [initandlisten] modules: none
+2017-12-04T14:59:48.588+0000 I CONTROL  [initandlisten] build environment:
+2017-12-04T14:59:48.588+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2017-12-04T14:59:48.588+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2017-12-04T14:59:48.588+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-12-04T14:59:48.588+0000 I CONTROL  [initandlisten] options: { config: "mongo-db/mongod.cfg", processManagement: { fork: true }, storage: { dbPath: "/data/db" }, systemLog: { destination: "file", path: "logs/mongod.log" } }
+2017-12-04T14:59:48.669+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-12-04T14:59:48.669+0000 I STORAGE  [initandlisten] 
+2017-12-04T14:59:48.669+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2017-12-04T14:59:48.669+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2017-12-04T14:59:48.669+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3432M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-12-04T14:59:49.388+0000 I CONTROL  [initandlisten] 
+2017-12-04T14:59:49.388+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-12-04T14:59:49.388+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-12-04T14:59:49.388+0000 I CONTROL  [initandlisten] 
+2017-12-04T14:59:49.389+0000 I CONTROL  [initandlisten] 
+2017-12-04T14:59:49.389+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2017-12-04T14:59:49.389+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2017-12-04T14:59:49.389+0000 I CONTROL  [initandlisten] 
+2017-12-04T14:59:49.389+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2017-12-04T14:59:49.389+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2017-12-04T14:59:49.389+0000 I CONTROL  [initandlisten] 
+2017-12-04T14:59:49.389+0000 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. rlimits set to 31395 processes, 65536 files. Number of processes should be at least 32768 : 0.5 times number of files.
+2017-12-04T14:59:49.389+0000 I CONTROL  [initandlisten] 
+2017-12-04T14:59:49.409+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2017-12-04T14:59:49.410+0000 I NETWORK  [thread1] waiting for connections on port 27017
+2017-12-04T14:59:52.517+0000 I NETWORK  [thread1] connection accepted from 127.0.0.1:48902 #1 (1 connection now open)
+2017-12-04T14:59:52.555+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:48902 conn1: { driver: { name: "nodejs", version: "2.2.33" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.4.0-45-generic" }, platform: "Node.js v6.9.1, LE, mongodb-core: 2.1.17" }
+2017-12-04T14:59:52.650+0000 I INDEX    [conn1] build index on: mean-app.UserObject properties: { v: 2, unique: true, key: { pkey: 1 }, name: "pkey_1", ns: "mean-app.UserObject", background: true }
+2017-12-04T14:59:52.650+0000 I INDEX    [conn1] build index done.  scanned 0 total records. 0 secs
+2017-12-04T15:03:36.338+0000 I NETWORK  [thread1] connection accepted from 127.0.0.1:49014 #2 (2 connections now open)
+2017-12-04T15:03:36.374+0000 I NETWORK  [conn2] received client metadata from 127.0.0.1:49014 conn2: { driver: { name: "nodejs", version: "2.2.33" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.4.0-45-generic" }, platform: "Node.js v6.9.1, LE, mongodb-core: 2.1.17" }
+2017-12-04T15:03:36.483+0000 I NETWORK  [thread1] connection accepted from 127.0.0.1:49016 #3 (3 connections now open)
+2017-12-04T15:03:36.512+0000 I NETWORK  [thread1] connection accepted from 127.0.0.1:49018 #4 (4 connections now open)
+2017-12-04T15:03:36.513+0000 I COMMAND  [conn3] CMD: drop mean-app.LocationObject
+2017-12-04T15:03:36.514+0000 I COMMAND  [conn4] CMD: drop mean-app.CityObject
+2017-12-04T15:03:36.516+0000 I NETWORK  [thread1] connection accepted from 127.0.0.1:49020 #5 (5 connections now open)
+2017-12-04T15:03:36.517+0000 I COMMAND  [conn2] CMD: drop mean-app.TagObject
+2017-12-04T15:03:36.517+0000 I COMMAND  [conn5] CMD: drop mean-app.UserObject
+2017-12-04T15:03:36.716+0000 I COMMAND  [conn4] command mean-app.CityObject command: create { create: "CityObject" } numYields:0 reslen:37 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 69016 } } } protocol:op_query 113ms
+2017-12-04T15:03:36.772+0000 I -        [conn2] end connection 127.0.0.1:49014 (5 connections now open)
+2017-12-04T15:03:36.773+0000 I -        [conn3] end connection 127.0.0.1:49016 (4 connections now open)
+2017-12-04T15:03:36.774+0000 I -        [conn4] end connection 127.0.0.1:49018 (3 connections now open)
+2017-12-04T15:03:36.775+0000 I -        [conn5] end connection 127.0.0.1:49020 (2 connections now open)
+2017-12-04T15:03:47.655+0000 I -        [conn1] end connection 127.0.0.1:48902 (1 connection now open)
+2017-12-04T15:03:49.676+0000 I NETWORK  [thread1] connection accepted from 127.0.0.1:49040 #6 (1 connection now open)
+2017-12-04T15:03:49.702+0000 I NETWORK  [conn6] received client metadata from 127.0.0.1:49040 conn6: { driver: { name: "nodejs", version: "2.2.33" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.4.0-45-generic" }, platform: "Node.js v6.9.1, LE, mongodb-core: 2.1.17" }
+2017-12-04T15:03:49.801+0000 I NETWORK  [thread1] connection accepted from 127.0.0.1:49042 #7 (2 connections now open)
+2017-12-04T15:03:49.822+0000 I NETWORK  [thread1] connection accepted from 127.0.0.1:49044 #8 (3 connections now open)
+2017-12-04T15:03:49.823+0000 I COMMAND  [conn7] CMD: drop mean-app.LocationObject
+2017-12-04T15:03:49.823+0000 I COMMAND  [conn8] CMD: drop mean-app.CityObject
+2017-12-04T15:03:49.826+0000 I NETWORK  [thread1] connection accepted from 127.0.0.1:49046 #9 (4 connections now open)
+2017-12-04T15:03:49.827+0000 I COMMAND  [conn6] CMD: drop mean-app.TagObject
+2017-12-04T15:03:49.827+0000 I COMMAND  [conn9] CMD: drop mean-app.UserObject
+2017-12-04T15:03:50.026+0000 I COMMAND  [conn7] command mean-app.LocationObject command: create { create: "LocationObject" } numYields:0 reslen:37 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 92826 } } } protocol:op_query 133ms
+2017-12-04T15:03:50.026+0000 I COMMAND  [conn9] command mean-app.$cmd command: listCollections { listCollections: true, filter: { name: "UserObject" }, cursor: {} } numYields:0 reslen:117 locks:{ Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { R: 1 }, acquireWaitCount: { R: 1 }, timeAcquiringMicros: { R: 132658 } } } protocol:op_query 132ms
+2017-12-04T15:03:50.067+0000 I -        [conn6] end connection 127.0.0.1:49040 (4 connections now open)
+2017-12-04T15:03:50.068+0000 I -        [conn7] end connection 127.0.0.1:49042 (3 connections now open)
+2017-12-04T15:03:50.068+0000 I -        [conn8] end connection 127.0.0.1:49044 (2 connections now open)
+2017-12-04T15:03:50.068+0000 I -        [conn9] end connection 127.0.0.1:49046 (1 connection now open)
+2017-12-04T15:03:52.883+0000 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2017-12-04T15:03:52.883+0000 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2017-12-04T15:03:52.883+0000 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2017-12-04T15:03:52.883+0000 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2017-12-04T15:03:52.883+0000 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2017-12-04T15:03:52.883+0000 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2017-12-04T15:03:52.883+0000 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2017-12-04T15:03:52.888+0000 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2017-12-04T15:03:53.073+0000 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2017-12-04T15:03:53.073+0000 I CONTROL  [signalProcessingThread] now exiting
+2017-12-04T15:03:53.073+0000 I CONTROL  [signalProcessingThread] shutting down with code:0
+2017-12-04T15:03:53.073+0000 I CONTROL  [initandlisten] shutting down with code:0

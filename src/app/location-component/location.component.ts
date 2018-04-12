@@ -6,23 +6,23 @@ import {
   Input,
   OnInit
 } from '@angular/core';
-
-
 import {
   WuglapiService
 } from '../services/wuglapi.service';
 import {
   Observable
 } from 'rxjs'
+import {ITag} from '../interfaces/ITag';
+
 @Component({
   selector: 'location',
   templateUrl: './location.component.html'
 })
 export class LocationComponent implements OnInit {
   @Input() item: any;
-  @Input() tags: any;
+  @Input() tags: Observable<ITag>;
  
-  private tagsList: Array<any>
+  private tagsList: Observable<ITag>;
   private locationID = "@";
 
   isActive: boolean = false;
@@ -30,7 +30,7 @@ export class LocationComponent implements OnInit {
 
   ngOnInit() {
     this.locationID = this.item.locationID;
-    this.tagsList = this.tags.filter((tag : any) => {
+    this.tagsList = this.tags.filter((tag : ITag) => {
       return (tag.locationID === this.item.id);
     })
     

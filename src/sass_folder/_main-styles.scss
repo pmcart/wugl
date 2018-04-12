@@ -21,6 +21,9 @@ html {
         opacity: 0.9;
         min-height: 500px;
         padding-top: 200px;
+        .row {
+            margin-bottom: 20px;
+        }
         .card {
             min-height: 400px;
             .btn-lg {
@@ -46,6 +49,9 @@ html {
             .tag-img-container {
                 float: left;
                 margin-right: 10px;
+                img {
+                    width: 30px;
+                }
             }
             .col-margin {
                 margin-top: 10px;

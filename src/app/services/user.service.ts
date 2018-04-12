@@ -6,4 +6,10 @@ export class UserService{
     public accessToken: string = "";
     public userName: string = ""; 
     public userImgURL: string = "";
+    public imgURL: string = "";
+    public gender: string = "";
+    public lastTagDate: string = "";
+    public citySelected: string= "";
+    public regionSelected: string= "";
+    public countrySelected: string= "";
 }

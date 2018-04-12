@@ -6,6 +6,8 @@ var LocationSchema = new mongoose.Schema({
     city: String,
     long: String,
     lat: String,
-});
+    countryID: String,
+    regionID: String
+}, { collection: 'LocationObject' });
 
-module.exports = mongoose.model('LocationObject', LocationSchema);
+module.exports = mongoose.model('LocationObject', LocationSchema, 'LocationObject');

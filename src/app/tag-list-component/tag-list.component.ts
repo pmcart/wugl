@@ -24,7 +24,7 @@ export class TagListComponent implements OnInit {
   }
 
   ngOnInit() {
-  console.log(this.tags);
+  //console.log(this.tags);
   }
 
 
